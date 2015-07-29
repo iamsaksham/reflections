@@ -1,0 +1,16 @@
+//lesson 1
+fc old.txt new.txt		//compare old and new files on cmd
+diff -u	old.txt new.txt		//to compare old and new file on terminal
+git log	--stat			//to check the commit history
+git diff old_id new_id		//to compare old and new commit ids
+git --version			//check git version
+
+
+git clone http://url			//copy repository
+git config --global color.ui auto	//change insertions and deletions color
+git checkout old_id			//revert Head to a previous version (detached head state)
+
+//lesson 2
+git init			//initializes a git repository
+git status			//check the git status and un-commited files
+git add file.txt		//add a file to staging area
