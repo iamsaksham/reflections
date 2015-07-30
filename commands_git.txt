@@ -5,12 +5,37 @@ git log	--stat			//to check the commit history
 git diff old_id new_id		//to compare old and new commit ids
 git --version			//check git version
 
-
 git clone http://url			//copy repository
 git config --global color.ui auto	//change insertions and deletions color
 git checkout old_id			//revert Head to a previous version (detached head state)
+
 
 //lesson 2
 git init			//initializes a git repository
 git status			//check the git status and un-commited files
 git add file.txt		//add a file to staging area
+git commit			//commit and add message in text editor
+git commit -m "message"		//commit and add message without editor
+
+git diff			//compare files in working directory and staging area
+git diff --staged		//compare files in staging area and repository
+git reset --hard		//reset/copy all files in working & staging area, same as the repository files. it is irreversible
+git checkout master		//return to master commit
+git branch			//check all the branches
+
+git branch new_name		//create a new branch with name as new_name
+git log --graph --oneline branch1 branch2	//show branch graph between branch1 and branch2
+git checkout -b new_branch_name			//new branch+ checkout done in a single line
+git merge branch1 branch2			//Merge branch1 and branch2
+git show commit_id				//Shows diff between a commit and its parent
+
+git branch -d branch_name			//delete a branch label
+git log --graph --oneline			//show complete branch graph
+git log -n 1					//git shows n no. of commits and here n=1
+
+
+//lesson 3
+git remote			//view and create remotes
+git remote add origin url		//add a remote and standard name used is origin
+git remote -v			//view more detailed remotes
+git push origin master		//push remote on github, origin is name of remote and master is name of branch
