@@ -39,3 +39,12 @@ git remote			//view and create remotes
 git remote add origin url		//add a remote and standard name used is origin
 git remote -v			//view more detailed remotes
 git push origin master		//push remote on github, origin is name of remote and master is name of branch
+
+//
+git stash                 //save current changes and remove them from working directory
+git stash log             //show list of stashes
+git stash apply           //bring changes from stash to working directory of 1st stash
+git stash apply stash@{n} //bring changes from stash to working directory of nth stash
+git stash pop             //bring changes from stash to working directory of 1st stash and remove that stash i.e (git stash apply + git stash drop)
+git stash drop            //delete 1st stash
+git stash drop stash@{n}  //delete nth stash
